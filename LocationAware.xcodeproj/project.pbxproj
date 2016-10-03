@@ -12,6 +12,10 @@
 		B495DE8D1DA26E2D00553061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B495DE8B1DA26E2D00553061 /* Main.storyboard */; };
 		B495DE8F1DA26E2D00553061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B495DE8E1DA26E2D00553061 /* Assets.xcassets */; };
 		B495DE921DA26E2D00553061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B495DE901DA26E2D00553061 /* LaunchScreen.storyboard */; };
+		B495DE9B1DA281E100553061 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495DE9A1DA281E100553061 /* ShadowView.swift */; };
+		B495DE9E1DA2823B00553061 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495DE9D1DA2823B00553061 /* Constants.swift */; };
+		B495DEA01DA286CD00553061 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495DE9F1DA286CD00553061 /* CustomView.swift */; };
+		B495DEA31DA2936300553061 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B495DEA21DA2936200553061 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		B495DE8E1DA26E2D00553061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B495DE911DA26E2D00553061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B495DE931DA26E2D00553061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B495DE9A1DA281E100553061 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		B495DE9D1DA2823B00553061 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B495DE9F1DA286CD00553061 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		B495DEA21DA2936200553061 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		B495DE861DA26E2D00553061 /* LocationAware */ = {
 			isa = PBXGroup;
 			children = (
+				B495DEA11DA2896800553061 /* Controller */,
+				B495DE9C1DA2822200553061 /* Constants */,
+				B495DE991DA281D300553061 /* View */,
 				B495DE871DA26E2D00553061 /* AppDelegate.swift */,
-				B495DE891DA26E2D00553061 /* ViewController.swift */,
 				B495DE8B1DA26E2D00553061 /* Main.storyboard */,
 				B495DE8E1DA26E2D00553061 /* Assets.xcassets */,
 				B495DE901DA26E2D00553061 /* LaunchScreen.storyboard */,
 				B495DE931DA26E2D00553061 /* Info.plist */,
 			);
 			path = LocationAware;
+			sourceTree = "<group>";
+		};
+		B495DE991DA281D300553061 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B495DE9A1DA281E100553061 /* ShadowView.swift */,
+				B495DE9F1DA286CD00553061 /* CustomView.swift */,
+				B495DEA21DA2936200553061 /* MapView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B495DE9C1DA2822200553061 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B495DE9D1DA2823B00553061 /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		B495DEA11DA2896800553061 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B495DE891DA26E2D00553061 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B495DEA01DA286CD00553061 /* CustomView.swift in Sources */,
+				B495DEA31DA2936300553061 /* MapView.swift in Sources */,
+				B495DE9B1DA281E100553061 /* ShadowView.swift in Sources */,
 				B495DE8A1DA26E2D00553061 /* ViewController.swift in Sources */,
 				B495DE881DA26E2D00553061 /* AppDelegate.swift in Sources */,
+				B495DE9E1DA2823B00553061 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
